@@ -1,5 +1,7 @@
-import { Links, Meta,Outlet} from "@remix-run/react"
+import { Links, Meta,Outlet,Scripts,LiveReload} from "@remix-run/react"
 import styles from './Styles/index.css'
+import Header from "./components/header"
+
 
 export function meta(){
 
@@ -38,7 +40,7 @@ href: styles
 {
     rel:"preconnect",
     href:"https://fonts.gstatic.com",
-    crossOrigin:true
+    crossOrigin:"true"
 
 },
 {
@@ -58,7 +60,7 @@ return(
 
 <Document>
 
-  <Outlet/>
+<Outlet/>
 
 </Document>
  
@@ -75,9 +77,10 @@ return(
         <Links/>
      </head>
      <body>
-  
+        <Header/>
         {children}
-
+        <Scripts/>
+        <LiveReload/>
      </body>
 
 
