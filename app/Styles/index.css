@@ -129,15 +129,19 @@ gap: 2rem;
 .footer .navegacion{
     
 flex-direction: row;
-
-
-}
-}
-.footer .navegacion a{
-
-color:var(--white);
 font-size: 2.8 rem ;
+
+}
+}
+.footer .navegacion a, 
+.footer .copyright{
+color:var(--white);
+
 text-decoration: none;
 font-weight: 700;
 
+}
+
+.footer .copyright{
+text-align: center;
 }
