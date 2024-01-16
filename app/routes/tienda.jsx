@@ -4,6 +4,18 @@ import {getGuitarras} from '../../app/models/guitarras.server';
 import Guitarra from '../components/guitarra';
 import styles from '../Styles/guitarras.css'
 
+export function meta(){
+  return[
+  {
+   title:'GuitarLa-Tienda'
+
+  }
+
+  ]
+
+}
+
+
 export function links(){
 
 return[
